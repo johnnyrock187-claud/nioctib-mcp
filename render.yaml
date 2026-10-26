@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nioctib-mcp
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: MCP_PATH
+        value: /mcp-bd81b2f1960411b8
